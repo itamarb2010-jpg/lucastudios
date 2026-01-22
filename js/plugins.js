@@ -10,6 +10,16 @@
         }
     },
     {
+        name: "TAB",
+        description: "Custom player list UI with live updates and group styling.",
+        platform: "Hytale",
+        version: "v1.0.0",
+        links: {
+            GitHub: "https://github.com/",
+            CurseForge: "https://curseforge.com/hytale/mods/tab"
+        }
+    },
+    {
         name: "CorePlus",
         description: "Soon",
         platform: "Hytale",
