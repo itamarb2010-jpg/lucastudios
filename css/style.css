@@ -1,0 +1,151 @@
+﻿* {
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #0e0e0e;
+    color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav {
+    background: #111;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    opacity: 0.6;
+    position: relative;
+}
+
+    .nav-links a:hover,
+    .nav-links a.active {
+        opacity: 1;
+    }
+        .nav-links a.active::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            width: 100%;
+            height: 2px;
+            background: white;
+        }
+main {
+    flex: 1;
+}
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background: white;
+    color: black;
+    border-radius: 6px;
+    margin: 5px;
+    font-weight: 600;
+}
+
+    .btn.secondary {
+        background: transparent;
+        border: 1px solid white;
+        color: white;
+    }
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.subtitle {
+    opacity: 0.7;
+    margin-bottom: 40px;
+}
+
+.plugin-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+.plugin-card {
+    background: #161616;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+    .plugin-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .plugin-card h3 {
+        margin-top: 0;
+    }
+
+.meta {
+    display: block;
+    margin: 10px 0;
+    font-size: 0.85em;
+    opacity: 0.6;
+}
+
+.plugin-links a {
+    margin-right: 12px;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.notice {
+    margin-top: 30px;
+    opacity: 0.7;
+}
+
+footer {
+    text-align: center;
+    padding: 24px;
+    background: #111;
+    opacity: 0.6;
+}
+.discord-btn {
+    padding: 8px 14px;
+    border-radius: 6px;
+    background: #5865F2;
+    color: white;
+    font-weight: 600;
+    margin-left: 16px;
+}
+
+    .discord-btn:hover {
+        background: #4752c4;
+    }
